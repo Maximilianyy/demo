@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Registrierung</title>
+    <title>About Me & My Accounts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container liquid-glass-effect" id="authContainer">
+<div class="container liquid-glass-effect" id="aboutMeContainer">
     <div class="form-wrapper">
-        <form id="loginForm" class="form active">
-            <h2>Login</h2>
-            <input type="email" placeholder="E-Mail" required>
-            <input type="password" placeholder="Passwort" required>
-            <button type="submit">Anmelden</button>
-        </form>
-
-        <form id="registerForm" class="form">
-            <h2>Registrieren</h2>
-            <input type="text" placeholder="Benutzername" required>
-            <input type="email" placeholder="E-Mail" required>
-            <input type="password" placeholder="Passwort" required>
-            <button type="submit">Konto erstellen</button>
-        </form>
+        <div id="aboutMe" class="form active">
+            <h2>About Me</h2>
+            <p>Welcome to my own website. Here I have linked all my accounts.</p>
+        </div>
     </div>
-    <button id="toggleFormBtn">Zur Registrierung wechseln</button>
+    <button id="toggleFormBtn">My Accounts</button>
 </div>
 
-<div class="container liquid-glass-effect hidden" id="constructionPage">
-    <h2>Website in Entwicklung</h2>
-    <div class="animation-container">
-        <div class="spinner"></div>
+<div class="container liquid-glass-effect hidden" id="linksPage">
+    <h2>My Accounts</h2>
+    <div class="links-container">
+        <a href="https://discord.gg/your-server-link" target="_blank" class="social-link liquid-glass-icon">
+            <i class="fab fa-discord"></i>
+            <span>Discord</span>
+        </a>
+        <a href="https://tiktok.com/@your-tiktok-account" target="_blank" class="social-link liquid-glass-icon">
+            <i class="fab fa-tiktok"></i>
+            <span>TikTok</span>
+        </a>
+        <a href="https://github.com/your-github-account" target="_blank" class="social-link liquid-glass-icon">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
     </div>
-    <p>Wir arbeiten hart daran, die Seite fertigzustellen. Schau bald wieder vorbei!</p>
-    <button id="backToAuthBtn">Zurück zur Anmeldung</button>
+    <div class="copyright">
+        <p> © AsleepRock</p>
+    </div>
+    <button id="backToAuthBtn">About Me</button>
 </div>
 
 <script src="script.js"></script>

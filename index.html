@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registrierung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container liquid-glass-effect" id="authContainer">
+    <div class="form-wrapper">
+        <form id="loginForm" class="form active">
+            <h2>Login</h2>
+            <input type="email" placeholder="E-Mail" required>
+            <input type="password" placeholder="Passwort" required>
+            <button type="submit">Anmelden</button>
+        </form>
+
+        <form id="registerForm" class="form">
+            <h2>Registrieren</h2>
+            <input type="text" placeholder="Benutzername" required>
+            <input type="email" placeholder="E-Mail" required>
+            <input type="password" placeholder="Passwort" required>
+            <button type="submit">Konto erstellen</button>
+        </form>
+    </div>
+    <button id="toggleFormBtn">Zur Registrierung wechseln</button>
+</div>
+
+<div class="container liquid-glass-effect hidden" id="constructionPage">
+    <h2>Website in Entwicklung</h2>
+    <div class="animation-container">
+        <div class="spinner"></div>
+    </div>
+    <p>Wir arbeiten hart daran, die Seite fertigzustellen. Schau bald wieder vorbei!</p>
+    <button id="backToAuthBtn">Zurück zur Anmeldung</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
